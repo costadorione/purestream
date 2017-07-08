@@ -51,7 +51,7 @@ def find_video_items(item=None, data=None, channel=""):
 
     itemlist = []
     for video in listavideos:
-        scrapedtitle = "En trovato in "+video[2]
+        scrapedtitle = item.title+" su ["+video[2]+"]"
         scrapedurl = video[1]
         server = video[2]
         if get_server_parameters(server)["thumbnail"]:
